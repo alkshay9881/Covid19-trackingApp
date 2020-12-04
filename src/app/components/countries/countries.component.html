@@ -1,0 +1,27 @@
+<div class="jumbotron bg-white text-center">
+  <h1 class="display-3 bg-secondary text-white">Corona covid-19 tracker countries wise</h1>
+  <hr>
+
+
+  <div class="mx-auto">
+    <div class="form-group col-lg-4 mx-auto">
+      <label for="c" class="text-primary">select country</label>
+      <select name="" id="c" class="form-control" #input (change)='updateValues(input.value)'>
+
+        <option value={{con}} *ngFor="let con of countries">{{con}}</option>
+
+      </select>
+
+    </div>
+
+  </div>
+  <app-dashboard-card [totalConfirmed]='totalConfirmed' [totalActive]='totalActive' [totalDeath]='totalDeath'
+    [totalRecovered]='totalRecovered'>
+  </app-dashboard-card>
+
+</div>
+<footer>
+  <div class="footer-copyright text-center py-3">© 2020 akshaymandge
+
+  </div>
+</footer>

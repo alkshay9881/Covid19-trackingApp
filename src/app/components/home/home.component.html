@@ -1,0 +1,60 @@
+<div class="jumbotron bg-white text-center">
+    <h1 class="display-3 bg-secondary text-white">Corona covid-19 tracker(Global)</h1>
+    <hr>
+    <div class="row">
+        <div class="card col p-3 m-3 bg-info">
+            <div class="ui statistic">
+                <div class="label">
+                    <h3>Confirm</h3>
+                </div>
+                <div class="value">
+                    {{totalConfirmed}}
+                </div>
+            </div>
+
+        </div>
+        <div class="card col p-3 m-3 bg-warning">
+            <div class="ui statistic">
+                <div class="label">
+                    <h3>Recovered</h3>
+                </div>
+                <div class="value">
+                    {{totalRecovered}}
+                </div>
+            </div>
+
+        </div>
+        <div class="card col p-3 m-3 bg-danger">
+            <div class="ui statistic">
+                <div class="label">
+                    <h3>Death</h3>
+                </div>
+                <div class="value">
+                    {{totalDeath}}
+                </div>
+            </div>
+
+        </div>
+        <div class="card col p-3 m-3 bg-success">
+            <div class="ui statistic">
+                <div class="label">
+                    <h3>Active</h3>
+                </div>
+                <div class="value">
+                    {{totalActive}}
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- <app-dashboard-card [totalConfirmed]='totalConfirmed' [totalActive]='totalActive' [totalDeath]='totalDeath'
+        [totalRecovered]='totalRecovered'>
+    </app-dashboard-card> -->
+
+</div>
+<footer>
+    <div class="footer-copyright text-center py-3">© 2020 akshaymandge
+
+    </div>
+</footer>
